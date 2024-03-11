@@ -1,10 +1,11 @@
+#calcuting the bank balances from amount balance , and transaction that is a product of months
 import ipdb
 import datetime
 import math
-
+#the function 
 def solution(A, D):
     amount_balance = 0
-
+#intializing the variables
     for i in range(len(A)):
         amount_balance = A[i]
         date_x = D[i]
@@ -14,7 +15,7 @@ def solution(A, D):
         end_date = datetime.date(2023, 12, 1)
         month_duration = (end_date - start_date).date
         month_duration = month_duration // 30  
-
+# the  loop to calculate the monthly amounts
         if A[i] < 0:
             if month_duration == 3:
                 transaction_cost = 100 * 12
