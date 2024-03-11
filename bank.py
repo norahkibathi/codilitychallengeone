@@ -15,6 +15,7 @@ def  solution (A,D):
           if A[i] < 0:
               if month_date == 3:
                transaction_cost = 100 * 12
+               transaction_cost = D
                print (f"Card Payment", "and", transaction_cost)
                   
           if A[i] > 0:
