@@ -20,8 +20,7 @@ def solution(A, D):
 # the  loop to calculate the monthly amounts when generating the loop it rember we have cash and payment system
         if A[i] < 0:
             if month_duration == 3:
-               if A[i] < 0:
-                 transaction_cost = 100 * 12
+               transaction_cost = 100 * 12
             print(f"Card Payment: {transaction_cost}")
         elif A[i] > 0:
             amount_balance += A[i] - abs(5 * 12)
